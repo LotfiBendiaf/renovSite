@@ -1,0 +1,14 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem clamp(1rem, 13vw, 10rem);
+    align-items: center;
+}
+
+header > *{
+    display: flex;
+}
+
+.active{
+    border-bottom: 2px solid var(--thirdColor);
+}

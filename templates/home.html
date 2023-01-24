@@ -1,0 +1,450 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %} {% load static %} 
+{% block title %}Renov{% endblock title %}
+<!-- Style -->
+{% block style %}
+<link rel="stylesheet" href="{% static 'Styles/main.css' %}" />
+{% endblock style %} {% block content %}
+<main>
+  <section class="hero-section">
+    <div class="sub-section-1">
+      <h1>Profitez de notre expertise en renovation</h1>
+      <p>
+        Située à proximité de Reims, Renov Entreprise met son professionnalisme
+        et son dynamisme à votre service pour la prise en charge de vos travaux
+        de rénovation immobilière pour les particuliers et les professionnels
+      </p>
+      <div>
+        <button class="btn">Faire un devis ?</button>
+        <button class="btn2">
+          <img src="{% static "Icons/image.svg" %}" alt=""> Voir nos derniers
+          travaux
+        </button>
+      </div>
+      <div class="float elt-1">
+        <img src="{% static "Icons/house.svg" %}" alt="">
+        <div>
+          <b class="small-text">Renovation / Construction</b>
+          <span class="small-text" id="thirdColor">Au meilleur prix</span>
+        </div>
+      </div>
+      <div class="float elt-2">
+        <img src="{% static "Icons/medal-star.svg" %}" alt="">
+        <div>
+          <b class="small-text">Avis</b>
+          <span class="small-text" id="thirdColor">5 / 5 Étoiles</span>
+        </div>
+      </div>
+      <div class="glass-section">
+        <div class="glass-elt">
+          <img src="{% static "Icons/location1.svg" %}" alt="">
+          <b>Localisation</b>
+          <div></div>
+          <div></div>
+          <p id="disabled">Reims, France</p>
+          <img src="{% static "Icons/arrow-down.svg" %}" alt="">
+        </div>
+        <div class="vl"></div>
+        <div class="glass-elt">
+          <img src="{% static "Icons/category-3.svg" %}" alt="">
+          <b>Types</b>
+          <div></div>
+          <div></div>
+          <p id="disabled">Renovation</p>
+          <img src="{% static "Icons/arrow-down.svg" %}" alt="">
+        </div>
+        <div class="vl"></div>
+        <div class="glass-elt">
+          <img src="{% static "Icons/money.svg" %}" alt="">
+          <b>Prix</b>
+          <div></div>
+          <div></div>
+          <p>~290€</p>
+          <img src="{% static "Icons/arrow-down.svg" %}" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="sub-section-2"></div>
+  </section>
+
+  <section class="description">
+    <img class="pattern" src="{% static "Images/pattern1.png" %}" alt="">
+    <img src="{% static "Images/image1.jpg" %}" alt="">
+    <div>
+      <h2 class="gradient-color">Pourquoi nous ?</h2>
+      <p class="gradient-color">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum est
+        dignissimos fugiat sapiente accusantium, molestiae quibusdam harum
+        voluptatibus, aspernatur, aperiam quos necessitatibus debitis dolores
+        iusto natus. Maxime excepturi perferendis harum hic aut perspiciatis
+        minima impedit corrupti illo quam vitae placeat veniam, porro inventore
+        blanditiis non sunt quasi ea, nisi a.
+      </p>
+      <div class="stats">
+        <div class="stat">
+            <h3>50</h3>
+            <p class="small-text">Lorem ipsum dolor</p>
+        </div>
+        <div class="stat">
+            <h3>950</h3>
+            <p class="small-text">Lorem ipsum dolor</p>
+        </div>
+        <div class="stat">
+            <h3>+220</h3>
+            <p class="small-text">Lorem ipsum dolor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Services presentés</h2>
+    <span id="disabled">Ce que nous vous offrons pour vos chantiers</span>
+    <div>
+        <div class="service" id="plumber">
+            <div class="note"></div>
+            <div class="detail-btn"></div>
+            <div class="details">
+                <div class="header">
+                    <p>Plomberie</p>
+                    <p id="secondaryColor">~100€</p>
+                </div>
+                <div>
+                    <img src="{% static "Icons/location1.svg" %}" alt=""> <span class="small-text">34, RUE DU COMMERCE
+                    </span>
+                </div>
+                <div>
+                    <div>
+                        <img src="{% static "Icons/calendar-2.svg" %}" alt=""> <span class="small-text">A planifier</span>
+                    </div>
+                    <div>
+                        <img src="{% static "Icons/timer-start.svg" %}" alt=""> <span class="small-text">Selon travaux</span>
+                    </div>
+                    <div>
+                        <img src="{% static "Icons/setting-2.svg" %}" alt=""> <span class="small-text">Materiaux compris</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service" id="soil">
+            <div class="note"></div>
+            <div class="detail-btn"></div>
+            <div class="details">
+                <div class="header">
+                    <p>Maçonnerie</p>
+                    <p id="secondaryColor">~15€ / &#x33A1</p>
+                </div>
+                <div>
+                    <img src="{% static "Icons/location1.svg" %}" alt=""> <span class="small-text">34, RUE DU COMMERCE
+                    </span>
+                </div>
+                <div>
+                    <div>
+                        <img src="{% static "Icons/calendar-2.svg" %}" alt=""> <span class="small-text">A planifier</span>
+                    </div>
+                    <div>
+                        <img src="{% static "Icons/timer-start.svg" %}" alt=""> <span class="small-text">1Heure / 10&#x33A1</span>
+                    </div>
+                    <div>
+                        <img src="{% static "Icons/setting-2.svg" %}" alt=""> <span class="small-text">Materiaux Non compris</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service" id="electric">
+            <div class="note"></div>
+            <div class="detail-btn"></div>
+            <div class="details">
+                <div class="header">
+                    <p>Électricité</p>
+                    <p id="secondaryColor">A estimer</p>
+                </div>
+                <div>
+                    <img src="{% static "Icons/location1.svg" %}" alt=""> <span class="small-text">34, RUE DU COMMERCE
+                    </span>
+                </div>
+                <div>
+                    <div>
+                        <img src="{% static "Icons/calendar-2.svg" %}" alt=""> <span class="small-text">A planifier</span>
+                    </div>
+                    <div>
+                        <img src="{% static "Icons/timer-start.svg" %}" alt=""> <span class="small-text">Selon travaux</span>
+                    </div>
+                    <div>
+                        <img src="{% static "Icons/setting-2.svg" %}" alt=""> <span class="small-text">Materiaux compris</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service" id="carpenter">
+            <div class="note"></div>
+            <div class="detail-btn"></div>
+            <div class="details">
+                <div class="header">
+                    <p>Menuiserie</p>
+                    <p id="secondaryColor">A estimer</p>
+                </div>
+                <div>
+                    <img src="{% static "Icons/location1.svg" %}" alt=""> <span class="small-text">34, RUE DU COMMERCE
+                    </span>
+                </div>
+                <div>
+                    <div>
+                        <img src="{% static "Icons/calendar-2.svg" %}" alt=""> <span class="small-text">A planifier</span>
+                    </div>
+                    <div>
+                        <img src="{% static "Icons/timer-start.svg" %}" alt=""> <span class="small-text">Selon travaux</span>
+                    </div>
+                    <div>
+                        <img src="{% static "Icons/setting-2.svg" %}" alt=""> <span class="small-text">Materiaux compris</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service" id="painting">
+            <div class="note"></div>
+            <div class="detail-btn"></div>
+            <div class="details">
+                <div class="header">
+                    <p>Painture</p>
+                    <p id="secondaryColor">~8€ / &#x33A1</p>
+                </div>
+                <div>
+                    <img src="{% static "Icons/location1.svg" %}" alt=""> <span class="small-text">34, RUE DU COMMERCE
+                    </span>
+                </div>
+                <div>
+                    <div>
+                        <img src="{% static "Icons/calendar-2.svg" %}" alt=""> <span class="small-text">A planifier</span>
+                    </div>
+                    <div>
+                        <img src="{% static "Icons/timer-start.svg" %}" alt=""> <span class="small-text">1Heure / 10&#x33A1</span>
+                    </div>
+                    <div>
+                        <img src="{% static "Icons/setting-2.svg" %}" alt=""> <span class="small-text">Materiaux Non compris</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service" id="isolation">
+            <div class="note"></div>
+            <div class="detail-btn"></div>
+            <div class="details">
+                <div class="header">
+                    <p>Isolation</p>
+                    <p id="secondaryColor">~100€</p>
+                </div>
+                <div>
+                    <img src="{% static "Icons/location1.svg" %}" alt=""> <span class="small-text">34, RUE DU COMMERCE
+                    </span>
+                </div>
+                <div>
+                    <div>
+                        <img src="{% static "Icons/calendar-2.svg" %}" alt=""> <span class="small-text">A planifier</span>
+                    </div>
+                    <div>
+                        <img src="{% static "Icons/timer-start.svg" %}" alt=""> <span class="small-text">100€ / 15&#x33A1</span>
+                    </div>
+                    <div>
+                        <img src="{% static "Icons/setting-2.svg" %}" alt=""> <span class="small-text">Materiaux compris</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+
+  <section class="entreprise">
+    <div class="h-bar"></div>
+    <div class="main">
+        <h2>Nous sommes une entreprise connue et recommondée</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Beatae voluptatum sapiente officia dignissimos placeat 
+            ipsum deleniti quasi illo assumenda, fuga ipsam sequi 
+            quo reiciendis repellendus qui ullam id, iste nam!
+        </p>
+        <a href="#"><button class="btn">Explorez notre savoir-faire</button></a>
+        <div class="float elt-2">
+            <img src="{% static "Icons/medal-star.svg" %}" alt="">
+            <div>
+              <b class="small-text">Avis</b>
+              <span class="small-text" id="thirdColor">5 / 5 Étoiles</span>
+            </div>
+          </div>
+    </div>
+    <img id="img1" src="{% static "Images/image1.jpg" %}" alt="">
+    <img id="img2" src="{% static "Images/wallpaper2.png" %}" alt="">
+
+  </section>
+
+  <section class="avantages">
+    <div class="h-bar"></div>
+
+    <img id="img2" src="{% static "Images/wallpaper3.jpg" %}" alt="">
+    <div class="statements">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, voluptas.</p>
+        <div class="element">
+            <img src="{% static "Icons/profile-2user.svg" %}" alt="">
+            <b>Lorem, ipsum dolor.</b>
+            <img class="toggle-down hidden" src="{% static "Icons/arrow-square-down.svg" %}" alt="">
+            <img class="toggle-up" src="{% static "Icons/arrow-square-up.svg" %}" alt="">
+            <div></div>
+            <p class="small-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Ea praesentium aspernatur dolores similique tenetur at?</p>
+        </div>
+        <div class="element">
+            <img src="{% static "Icons/24-support.svg" %}" alt="">
+            <b>Lorem, ipsum dolor.</b>
+            <img class="toggle-down" src="{% static "Icons/arrow-square-down.svg" %}" alt="">
+            <img class="toggle-up hidden" src="{% static "Icons/arrow-square-up.svg" %}" alt="">
+            <div></div>
+            <p class="small-text hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Ea praesentium aspernatur dolores similique tenetur at?</p>
+        </div>
+        <div class="element">
+            <img src="{% static "Icons/global.svg" %}" alt="">
+            <b>Lorem, ipsum dolor.</b>
+            <img class="toggle-down" src="{% static "Icons/arrow-square-down.svg" %}" alt="">
+            <img class="toggle-up hidden" src="{% static "Icons/arrow-square-up.svg" %}" alt="">
+            <div></div>
+            <p class="small-text hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Ea praesentium aspernatur dolores similique tenetur at?</p>
+        </div>
+
+    </div>
+  </section>
+  <section class="testimonials">
+    <h2>Que disent nos client ?</h2>
+    <p class="small-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eum necessitatibus totam.</p>
+    <div class="slider">
+        <div class="card">
+            <img class="profile" src="{% static "Images/profile1.jpg" %}" alt="">
+            <img class="quote" src="{% static "Icons/quote-down-circle.svg" %}" alt="">
+            <p class="cutoff-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Deserunt necessitatibus modi, placeat deleniti eaque sit 
+                sequi voluptas ab praesentium autem vel commodi quaerat 
+                quas perspiciatis similique fuga beatae eos delectus!
+            </p>
+            <!-- <img class="icon2" src="{% static "Icons/arrow-down.svg" %}" alt=""> -->
+            <input class="expand-btn" type="checkbox">
+            <div class="rating">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+            </div>
+            <h3>Mike brandon</h3>
+            <span class="small-text">The new age Inc</span>
+        </div>
+        <div class="card">
+            <img class="profile" src="{% static "Images/profile1.jpg" %}" alt="">
+            <img class="quote" src="{% static "Icons/quote-down-circle.svg" %}" alt="">
+            <p class="cutoff-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Deserunt necessitatibus modi, placeat deleniti eaque sit 
+                sequi voluptas ab praesentium autem vel commodi quaerat 
+                quas perspiciatis similique fuga beatae eos delectus!
+            </p>
+            <!-- <img class="icon2" src="{% static "Icons/arrow-down.svg" %}" alt=""> -->
+            <input class="expand-btn" type="checkbox">
+            <div class="rating">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+            </div>
+            <h3>Mike brandon</h3>
+            <span class="small-text">The new age Inc</span>
+        </div>
+        <div class="card">
+            <img class="profile" src="{% static "Images/profile1.jpg" %}" alt="">
+            <img class="quote" src="{% static "Icons/quote-down-circle.svg" %}" alt="">
+            <p class="cutoff-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Deserunt necessitatibus modi, placeat deleniti eaque sit 
+                sequi voluptas ab praesentium autem vel commodi quaerat 
+                quas perspiciatis similique fuga beatae eos delectus!
+            </p>
+            <!-- <img class="icon2" src="{% static "Icons/arrow-down.svg" %}" alt=""> -->
+            <input class="expand-btn" type="checkbox">
+            <div class="rating">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+            </div>
+            <h3>Mike brandon</h3>
+            <span class="small-text">The new age Inc</span>
+        </div>
+        <div class="card">
+            <img class="profile" src="{% static "Images/profile2.jpg" %}" alt="">
+            <img class="quote" src="{% static "Icons/quote-down-circle.svg" %}" alt="">
+            <p class="cutoff-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Deserunt necessitatibus modi, placeat deleniti eaque sit 
+                sequi voluptas ab praesentium autem vel commodi quaerat 
+                quas perspiciatis similique fuga beatae eos delectus!
+            </p>
+            <!-- <img class="icon2" src="{% static "Icons/arrow-down.svg" %}" alt=""> -->
+            <input class="expand-btn" type="checkbox">
+            <div class="rating">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+            </div>
+            <h3>Mike brandon</h3>
+            <span class="small-text">The new age Inc</span>
+        </div>
+        <div class="card">
+            <img class="profile" src="{% static "Images/profile1.jpg" %}" alt="">
+            <img class="quote" src="{% static "Icons/quote-down-circle.svg" %}" alt="">
+            <p class="cutoff-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Deserunt necessitatibus modi, placeat deleniti eaque sit 
+                sequi voluptas ab praesentium autem vel commodi quaerat 
+                quas perspiciatis similique fuga beatae eos delectus!
+            </p>
+            <!-- <img class="icon2" src="{% static "Icons/arrow-down.svg" %}" alt=""> -->
+            <input class="expand-btn" type="checkbox">
+            <div class="rating">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+            </div>
+            <h3>Mike brandon</h3>
+            <span class="small-text">The new age Inc</span>
+        </div>
+        <div class="card">
+            <img class="profile" src="{% static "Images/profile2.jpg" %}" alt="">
+            <img class="quote" src="{% static "Icons/quote-down-circle.svg" %}" alt="">
+            <p class="cutoff-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Deserunt necessitatibus modi, placeat deleniti eaque sit 
+                sequi voluptas ab praesentium autem vel commodi quaerat 
+                quas perspiciatis similique fuga beatae eos delectus!
+            </p>
+            <!-- <img class="icon2" src="{% static "Icons/arrow-down.svg" %}" alt=""> -->
+            <input class="expand-btn" type="checkbox">
+            <div class="rating">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.png" %}" alt="">
+            </div>
+            <h3>Mike brandon</h3>
+            <span class="small-text">The new age Inc</span>
+        </div>
+    </div>
+    <img class="sliderBtn nextBtn" src="{% static "Icons/arrow-circle-right.svg" %}" alt="">
+    <img class="sliderBtn prevBtn" src="{% static "Icons/arrow-circle-left.svg" %}" alt="">
+  </section>
+
+</main>
+
+{% endblock content %}

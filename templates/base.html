@@ -1,0 +1,113 @@
+<!-- templates/base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/svg" href="{% static 'Icons/house.ico' %}" sizes="32x24"/>
+
+    <title>{% block title %}Domiciliation{% endblock title %}</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Script -->
+    <script src="{% static 'Scripts/script.js' %}" defer></script>
+
+    <!-- Style -->
+    {% block style %}
+    {% endblock style %}
+    <link rel="stylesheet" href="{% static 'Styles/header.css' %}">
+    <link rel="stylesheet" href="{% static 'Styles/footer.css' %}">
+
+    <!-- Font Awesome
+    <script src="https://kit.fontawesome.com/e482781f42.js" crossorigin="anonymous"></script>
+
+    Google Font 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+round|Material+Icons+Round"
+    rel="stylesheet"> -->
+
+  </head>
+
+  <header id="header">
+    <div class="logo-header">
+      <a href="{% url 'home' %}">
+        <h2>Logo title</h2>
+      </a>
+    </div>
+  
+    <ul class="navbar">
+      <li class="active">
+        <a class="link" href="{% url 'home' %}">Accueil</a>
+      </li>
+      <li>
+        <a class="link" href="#">Services</a>
+      </li>
+      <li>
+        <a class="link" href="{% url 'travaux' %}">Nos travaux</a>
+      </li>
+      <li>
+        <a class="link" href="#">Savoir-faire</a>
+      </li>
+    </ul>
+
+    <div>
+        <button class="btn">Nous contacter</button>
+    </div>
+  
+   
+  
+  </header>
+  {% block content %} 
+
+  {% endblock content %}
+  <footer class="footer">
+    <div class="section-1">
+        <div>
+            <div class="header">
+                <img class="icon" src="{% static "Icons/house.svg" %}" alt="">
+                <span class="bold-text">RenovSite</span>
+            </div>
+            <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b></p>
+            <div>
+                <img class="icon" src="{% static "Icons/house.svg" %}" alt="">
+                <img class="icon" src="{% static "Icons/star.svg" %}" alt="">
+                <img class="icon" src="{% static "Icons/money.svg" %}" alt="">
+                <img class="icon" src="{% static "Icons/crown.svg" %}" alt="">
+            </div>
+        </div>
+        <div>
+            <span class="bold-text">A propos</span>
+            <a class="link" href="">Notre histoire</a>
+            <a class="link" href="">Notre equipe</a>
+            <a class="link" href="">Nos perspectives</a>
+        </div>
+        <div>
+            <span class="bold-text">Support</span>
+            <a class="link" href="">FAQ/a>
+            <a class="link" href="">Services</a>
+            <a class="link" href="">Aide</a>
+        </div>
+        <div>
+            <span class="bold-text">Contact</span>
+            <div class="header">
+                <img class="icon" src="{% static "Icons/building-3.svg" %}" alt="">
+                +55 19902948445
+            </div>
+            <div class="header">
+                <img class="icon" src="{% static "Icons/global.svg" %}" alt="">
+                contact.reims@renovsite.com
+            </div>
+        </div>
+
+    </div>
+    <div class="section-2">
+        <p class="small-text bold-text">Tout droit reservé, Renov @2023</p> 
+    </div>
+  </footer>
+  
+  </body>
+</html>
