@@ -1,0 +1,36 @@
+<!-- templates/travaux.html -->
+{% extends 'base.html' %} {% load static %} 
+{% block title %}Renov{% endblock title %}
+<!-- Style -->
+{% block style %}
+    <link rel="stylesheet" href="{% static 'Styles/main.css' %}" />
+    <!-- Script -->
+    <script src="{% static 'Scripts/slider.js' %}" defer></script>
+{% endblock style %} 
+
+{% block content %}
+<main class="contact">
+    <h1>Contact</h1>
+    <div>
+        <form method="POST" id="contact-form" class="slide-in from-left">
+            <h2>Get In Touch</h2>
+            {% csrf_token %}
+            <label>Name</label>
+            <input class="input-field" required type="text" name="nom">
+
+            <label>Subject</label>
+            <input class="input-field" required type="text" name="sujet">
+
+            <label>E-Mail</label>
+            <input class="input-field" required type="text" name="email">
+
+            <label>Message</label>
+            <textarea class="input-field" required name="message"></textarea> 
+
+            <input id="submit-btn" type="submit" name="Envoyer">
+        </form>
+    </div>
+
+</main>
+
+{% endblock content%}

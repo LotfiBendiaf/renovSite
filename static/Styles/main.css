@@ -793,3 +793,55 @@ main.works-container {
 .works > .after::before{
   content: "Apres";
 }
+
+/* Contact Form */
+#contact-form{
+	display: block;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 15px;
+	border-radius: 7px;
+	background-color: var(--lightColor);
+	margin-bottom: 50px;
+
+}
+
+.input-field{
+  color: var(--mainTextColor);
+	width: 100%;
+	padding: 1rem;
+	background-color: var(--white);
+	border: 1px solid var(--thirdColor);
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+#contact-form label{
+	line-height: 2.7em;
+}
+
+#contact-form textarea{
+	min-height: 100px;
+	font-size: 14px;
+}
+
+#submit-btn{
+	margin-top: 1rem;
+	width: 100%;
+	font-size: 1rem;
+  padding: 1rem;
+	color: var(--lightColor);
+	background-color: var(--mainColor);
+
+	border: none;
+  border-radius: 7px 0 7px 7px;
+	cursor: pointer;
+  transition: 300ms ease-in;
+  font-weight: 700;
+
+}
+
+#submit-btn:hover{
+	background-color: var(--thirdColor);
+
+}
