@@ -10,6 +10,7 @@ const preBtn = [...document.querySelectorAll('.prevBtn')];
 togglesDown.forEach(toggle => { 
     toggle.addEventListener('click', () => {
         toggle.parentElement.getElementsByTagName('p')[0].classList.toggle('hidden')
+        toggle.parentElement.getElementsByTagName('p')[0].style.marginTop = ".5rem"
         toggle.classList.toggle('hidden')
         toggle.parentElement.getElementsByClassName('toggle-up')[0].classList.toggle('hidden')
     })
@@ -37,3 +38,24 @@ productContainer.forEach((item, i) => {
         item.scrollLeft -= containerWidth;
     })
 })
+
+// Menu Burger
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu');
+let menuOpen =false;
+
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    console.log("Test")
+    menuBtn.classList.add('open');
+    menu.classList.remove('hidden');
+    menu.classList.add('visible');
+    menuOpen = true;
+  } else {
+    console.log("Test")
+    menuBtn.classList.remove('open');
+    menu.classList.remove('visible');
+    menu.classList.add('hidden');
+    menuOpen = false;
+  }
+});

@@ -1,36 +1,34 @@
-<!-- templates/travaux.html -->
+<!-- templates/contact.html -->
 {% extends 'base.html' %} {% load static %} 
 {% block title %}Renov{% endblock title %}
 <!-- Style -->
 {% block style %}
     <link rel="stylesheet" href="{% static 'Styles/main.css' %}" />
     <!-- Script -->
-    <script src="{% static 'Scripts/slider.js' %}" defer></script>
+    <script src="{% static 'Scripts/script.js' %}" defer></script>
 {% endblock style %} 
 
 {% block content %}
 <main class="contact">
-    <h1>Contact</h1>
-    <div>
+    <div class="gradient">
         <form method="POST" id="contact-form" class="slide-in from-left">
-            <h2>Get In Touch</h2>
+            <h2 class="bold-text">Nous contacter ?</h2>
             {% csrf_token %}
-            <label>Name</label>
+            <label>Nom</label>
             <input class="input-field" required type="text" name="nom">
-
-            <label>Subject</label>
-            <input class="input-field" required type="text" name="sujet">
-
+    
+            <label>Sujet</label>
+            <input class="input-field" required type="text" name="sujet" placeholder="Exemple : Faire un devis">
+    
             <label>E-Mail</label>
             <input class="input-field" required type="text" name="email">
-
+    
             <label>Message</label>
             <textarea class="input-field" required name="message"></textarea> 
-
-            <input id="submit-btn" type="submit" name="Envoyer">
+    
+            <input id="submit-btn" type="submit" name="Envoyer" value="Envoyer">
         </form>
     </div>
-
 </main>
 
 {% endblock content%}

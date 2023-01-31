@@ -61,7 +61,7 @@
           <b>Prix</b>
           <div></div>
           <div></div>
-          <p>~290€</p>
+          <p>~A estimer</p>
           <img src="{% static "Icons/arrow-down.svg" %}" alt="">
         </div>
       </div>
@@ -75,31 +75,37 @@
     <div>
       <h2 class="gradient-color">Pourquoi nous ?</h2>
       <p class="gradient-color">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum est
-        dignissimos fugiat sapiente accusantium, molestiae quibusdam harum
-        voluptatibus, aspernatur, aperiam quos necessitatibus debitis dolores
-        iusto natus. Maxime excepturi perferendis harum hic aut perspiciatis
-        minima impedit corrupti illo quam vitae placeat veniam, porro inventore
-        blanditiis non sunt quasi ea, nisi a.
+        Dans notre entreprise de rénovation, nous nous engageons 
+        à fournir des services de haute qualité à un prix abordable. 
+        Avec des années d'expérience et une équipe de professionnels 
+        qualifiés, nous avons l'expertise nécessaire pour mener à bien 
+        tout projet de rénovation, petit ou grand. Notre objectif est 
+        de dépasser vos attentes en offrant un savoir-faire et un 
+        service à la clientèle exceptionnels. Nous comprenons l'importance 
+        de votre maison ou espace à renover, et nous travaillons en étroite 
+        collaboration avec vous pour donner vie à votre vision. Choisissez-nous 
+        pour votre prochain projet de rénovation et faites l'expérience de 
+        la différence que représente le fait de travailler avec une entreprise 
+        fiable et digne de confiance.
       </p>
       <div class="stats">
         <div class="stat">
             <h3>50</h3>
-            <p class="small-text">Lorem ipsum dolor</p>
+            <p class="small-text">Personnes qualifiés</p>
         </div>
         <div class="stat">
             <h3>950</h3>
-            <p class="small-text">Lorem ipsum dolor</p>
+            <p class="small-text">Clients satisfaits</p>
         </div>
         <div class="stat">
             <h3>+220</h3>
-            <p class="small-text">Lorem ipsum dolor</p>
+            <p class="small-text">Projets realisés</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="services">
+  <section class="services" id="services">
     <h2>Services presentés</h2>
     <span id="disabled">Ce que nous vous offrons pour vos chantiers</span>
     <div>
@@ -262,12 +268,16 @@
     <div class="h-bar"></div>
     <div class="main">
         <h2>Nous sommes une entreprise connue et recommondée</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Beatae voluptatum sapiente officia dignissimos placeat 
-            ipsum deleniti quasi illo assumenda, fuga ipsam sequi 
-            quo reiciendis repellendus qui ullam id, iste nam!
+        <p>
+            Nous n'utilisons que les meilleurs matériaux et les techniques 
+            les plus récentes pour obtenir des résultats étonnants qui dépassent vos attentes. 
+            De plus, nous proposons des options de financement souples et une garantie sur tous nos services, 
+            ce qui vous assure une tranquillité d'esprit et une valeur ajoutée. 
+            Choisissez-nous pour votre prochain projet de rénovation et faites 
+            l'expérience de la différence que représente le fait de travailler 
+            avec une entreprise réputée et digne de confiance.
         </p>
-        <a href="#"><button class="btn">Explorez notre savoir-faire</button></a>
+        <a href="{% url 'travaux' %}"><button class="btn">Explorez notre savoir-faire</button></a>
         <div class="float elt-2">
             <img src="{% static "Icons/medal-star.svg" %}" alt="">
             <div>
@@ -284,36 +294,34 @@
   <section class="avantages">
     <div class="h-bar"></div>
 
-    <img id="img2" src="{% static "Images/wallpaper3.jpg" %}" alt="">
+    <img src="{% static "Images/wallpaper3.jpg" %}" alt="">
     <div class="statements">
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, voluptas.</p>
+        <h2>RenovSite la renovation de demain</h2>
+        <p>"Une bonne réputation vaut plus que de l’argent." - Publilius Syrus</p>
         <div class="element">
             <img src="{% static "Icons/profile-2user.svg" %}" alt="">
-            <b>Lorem, ipsum dolor.</b>
+            <b>Materiaux</b>
             <img class="toggle-down hidden" src="{% static "Icons/arrow-square-down.svg" %}" alt="">
             <img class="toggle-up" src="{% static "Icons/arrow-square-up.svg" %}" alt="">
             <div></div>
-            <p class="small-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Ea praesentium aspernatur dolores similique tenetur at?</p>
+            <p class="small-text">Nous n'utilisons que les meilleurs matériaux et les techniques 
+                les plus récentes pour obtenir des résultats étonnants qui dépassent vos attentes.</p>
         </div>
         <div class="element">
             <img src="{% static "Icons/24-support.svg" %}" alt="">
-            <b>Lorem, ipsum dolor.</b>
+            <b>Support client H24</b>
             <img class="toggle-down" src="{% static "Icons/arrow-square-down.svg" %}" alt="">
             <img class="toggle-up hidden" src="{% static "Icons/arrow-square-up.svg" %}" alt="">
             <div></div>
-            <p class="small-text hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Ea praesentium aspernatur dolores similique tenetur at?</p>
+            <p class="small-text hidden">Nous sommes disponibles et à l'écoute de nos clients à tout moment</p>
         </div>
         <div class="element">
             <img src="{% static "Icons/global.svg" %}" alt="">
-            <b>Lorem, ipsum dolor.</b>
+            <b>Prestation globale</b>
             <img class="toggle-down" src="{% static "Icons/arrow-square-down.svg" %}" alt="">
             <img class="toggle-up hidden" src="{% static "Icons/arrow-square-up.svg" %}" alt="">
             <div></div>
-            <p class="small-text hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Ea praesentium aspernatur dolores similique tenetur at?</p>
+            <p class="small-text hidden">Notre but est de dépasser vos attentes en proposant une expertise et un service client exceptionnels.</p>
         </div>
 
     </div>

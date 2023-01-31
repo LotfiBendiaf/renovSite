@@ -32,7 +32,7 @@
   <header id="header">
     <div class="logo-header">
       <a href="{% url 'home' %}">
-        <h2>Logo title</h2>
+        <img class="icon" src="{% static "Icons/house.svg" %}" alt="">
       </a>
     </div>
   
@@ -47,7 +47,7 @@
         <a class="link" href="{% url 'travaux' %}">Nos travaux</a>
       </li>
       <li>
-        <a class="link" href="#">Savoir-faire</a>
+        <a class="link" href="{% url 'apropos' %}">Qui sommes nous ?</a>
       </li>
     </ul>
 
@@ -56,6 +56,32 @@
         <button class="btn">Nous contacter</button>
       </a>
         
+    </div>
+
+    <!-- Burger Menu -->
+    <div class="menu-btn hidden">
+      <div class="menu-btn__burger">
+      </div>
+    </div>
+
+    <div class="menu hidden">
+      <ul>
+        <li><a class="link" href="#services">Nos services</a>
+          <img class="icon" src="{% static "Icons/house.svg" %}" alt="">
+        </li>
+        <li><a class="link" href="{% url 'travaux' %}">Nos travaux</a>
+          <img class="icon" src="{% static "Icons/building-3.svg" %}" alt="">
+        </li>
+        <li><a class="link" href="{% url 'apropos' %}">Qui sommes-nous ?</a>
+          <img class="icon" src="{% static "Icons/flag.svg" %}" alt="">
+        </li>
+        <li style="border-bottom: 2px solid var(--mainColor);"></li>
+        <li>
+          <a href="{% url 'contact' %}">
+            <button class="btn">Nous contacter</button>
+          </a>
+        </li>
+      </ul>
     </div>
   
    
@@ -71,7 +97,8 @@
                 <img class="icon" src="{% static "Icons/house.svg" %}" alt="">
                 <span class="bold-text">RenovSite</span>
             </div>
-            <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b></p>
+            <p><b>RenovSite est une entreprise de construction qui aide les
+              gens à rénover leurs maisons ou leurs espaces professionnels</b></p>
             <div>
                 <img class="icon" src="{% static "Icons/house.svg" %}" alt="">
                 <img class="icon" src="{% static "Icons/star-1.svg" %}" alt="">
@@ -87,8 +114,8 @@
         </div>
         <div>
             <span class="bold-text">Support</span>
-            <a class="link" href="">FAQ/a>
-            <a class="link" href="">Services</a>
+            <a class="link" href="{% url 'faq' %}">FAQ</a>
+            <a class="link" href="#services">Services</a>
             <a class="link" href="">Aide</a>
         </div>
         <div>
@@ -101,6 +128,9 @@
                 <img class="icon" src="{% static "Icons/global.svg" %}" alt="">
                 contact.reims@renovsite.com
             </div>
+            <a href="{% url 'contact' %}">
+              <button class="btn">Nous contacter</button>
+            </a>
         </div>
 
     </div>

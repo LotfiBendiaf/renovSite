@@ -4,18 +4,20 @@ from .forms import MessageForm
 # Create your views here.
 def Home(request):
 
-    context = {
-    }
-
-    return render(request, 'home.html', context)
+    return render(request, 'home.html')
 
 # Travaux
 def Travaux(request):
 
-    context = {
-    }
+    return render(request, 'travaux.html')
+# A Propos
+def Apropos(request):
 
-    return render(request, 'travaux.html', context)
+    return render(request, 'apropos.html')
+# FAQ
+def FAQ(request):
+
+    return render(request, 'FAQ.html')
 
 def Contact(request):
     if request.method == 'POST':

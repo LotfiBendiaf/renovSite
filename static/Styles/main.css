@@ -78,7 +78,7 @@ main > section:last-child{
 }
 
 h1 {
-  font-size: clamp(1.5rem, 3.5vw, 3.5rem);
+  font-size: clamp(1.7rem, 3.5vw, 4.5rem);
 }
 
 h2 {
@@ -138,7 +138,7 @@ a.link:hover {
 p {
   font-size: clamp(0.8rem, 1vw, 1.5rem);
   color: var(--mainTextColor);
-  line-height: 1.5rem;
+  line-height: 1.7rem;
 }
 
 hr {
@@ -288,8 +288,7 @@ button{
 
 .hero-section{
   display: flex;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin-inline: 4rem;
 }
 .hero-section > *{
   background-size: cover;
@@ -372,7 +371,6 @@ button{
   display: flex;
   gap: clamp(1rem, 7vw, 10rem);
   background-color: var(--darkColor);
-  height: 70vh;
   padding: 3rem clamp(1rem, 20vw, 10rem);
 }
 .description h2,
@@ -550,12 +548,12 @@ section.avantages > img{
   height: 100%;
   border-radius: var(--border);
 }
-section.avantages > .statements {
+.statements {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-section.avantages > .statements > .element{
+.statements > .element{
   display: grid;
   grid-template-columns: 20px auto 20px;
   column-gap: 1rem;
@@ -567,8 +565,8 @@ section.avantages > .statements > .element{
   border-radius: var(--border);
   align-items: center;
 }
-section.avantages > .statements > .element > .toggle-down,
-section.avantages > .statements > .element > .toggle-up{
+.statements > .element > .toggle-down,
+.statements > .element > .toggle-up{
   cursor: pointer;
 }
 
@@ -588,7 +586,6 @@ section.testimonials > .slider{
   gap: 2rem;
   align-items: center;
   color: var(--darkColor)!;
-  height: 70vh;
   padding: 2rem clamp(1rem, 20vw, 10rem);
   margin-top: 1rem;
   overflow-x: auto;
@@ -605,6 +602,7 @@ section.testimonials > .slider > .card{
   gap: 0.5rem;
   border-radius: var(--border);
   border: 1px solid var(--lightColor);
+  margin-top: 2rem;
   padding: 1rem;
 }
 .slider > .card > .profile{
@@ -694,7 +692,8 @@ section.testimonials > .slider > .card{
 main.works-container {
   display: grid;
   place-items: center;
-  min-height: 100vh;
+  min-height: auto;
+  padding: 2rem;
 }
 
 .works{
@@ -714,7 +713,7 @@ main.works-container {
 }
 
 .slider-image{
-  width: 100%;
+  width: 100vw;
   height: 100%;
   object-fit: cover;
   object-position: left;
@@ -794,16 +793,29 @@ main.works-container {
   content: "Apres";
 }
 
+main.contact{
+  background-image: url(/static/Images/wallpaper3.jpg);
+  background-size: cover;
+}
+main.contact > .gradient{
+  background-image: linear-gradient(to right, var(--darkColor) 40%, rgba(255, 255, 255, 0) 100%);
+  padding: 2rem clamp(1rem, 20vw, 10rem);
+  width: 100%;
+}
+
 /* Contact Form */
 #contact-form{
 	display: block;
 	max-width: 600px;
-	margin: 0 auto;
+	margin: 0;
 	padding: 15px;
 	border-radius: 7px;
-	background-color: var(--lightColor);
 	margin-bottom: 50px;
+  color: var(--white);
+}
 
+#contact-form > h2{
+  color: var(--white);
 }
 
 .input-field{
@@ -812,7 +824,7 @@ main.works-container {
 	padding: 1rem;
 	background-color: var(--white);
 	border: 1px solid var(--thirdColor);
-	border-radius: 5px;
+	border-radius: var(--border);
 	font-size: 14px;
 }
 
@@ -827,14 +839,13 @@ main.works-container {
 
 #submit-btn{
 	margin-top: 1rem;
-	width: 100%;
 	font-size: 1rem;
-  padding: 1rem;
-	color: var(--lightColor);
+  padding: 1rem 2rem;
+	color: var(--white);
 	background-color: var(--mainColor);
 
 	border: none;
-  border-radius: 7px 0 7px 7px;
+  border-radius: 1px;
 	cursor: pointer;
   transition: 300ms ease-in;
   font-weight: 700;
@@ -842,6 +853,325 @@ main.works-container {
 }
 
 #submit-btn:hover{
-	background-color: var(--thirdColor);
+	background-color: var(--secondaryColor);
+
+}
+
+/* Apropos */
+.apropos{
+  display: flex;
+  padding: 2rem clamp(1rem, 20vw, 10rem);
+  gap: 3rem;
+}
+
+.apropos > img{
+  width: 40%;
+  border-radius: var(--border);
+}
+
+/* FAQ */
+.FAQ-page{
+  padding: 2rem clamp(3rem, 20%, 25rem);
+}
+
+/* Responsivity */
+
+@media screen and (max-width: 1000px){
+  h1{
+    line-height: 2rem;
+  }
+  h2{
+    line-height: 1.7rem;
+  }
+  button{
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  .hero-section > .sub-section-1 > div{
+    display: flex;
+    flex-direction: column;
+  }
+  .sub-section-1 .float.elt-1{
+    top: 40%;
+  }
+  .glass-section{
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--boxShadow);
+  }
+  .glass-elt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .description{
+    padding: 2rem clamp(1rem, 10vw, 10rem);
+  }
+  .services > div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+  
+  }
+  section.entreprise{
+    padding: 2rem clamp(1rem, 10vw, 10rem);
+
+  }
+  section.avantages > img{
+    width: 50%;
+    min-height: 100%;
+    border-radius: var(--border);
+  }
+  main.works-container {
+    display: grid;
+    place-items: start;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px){
+  h1{
+    line-height: 2rem;
+  }
+  h2{
+    line-height: 1.7rem;
+  }
+  .hero-section{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 1.5rem;
+  }
+  .hero-section > .sub-section-1{
+    background-image: url(/static/Images/wallpaper2.png);
+    padding: 1rem;
+    border-radius: var(--border);
+    width: 100%;
+  }
+  .hero-section > .sub-section-1 h1{
+    margin: 1rem;
+  }
+  .hero-section > .sub-section-2{
+    display: none;
+  }
+  .sub-section-1 > p{
+    width: calc(100% + 2rem);
+    translate: -1rem 0;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: .5rem;
+  }
+  button{
+    max-width: 70vw;
+    margin: 0 auto;
+  }
+  .glass-elt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .glass-elt #disabled{
+    color: var(--thirdColor);
+  }
+  .sub-section-1 .float{
+    display: none;
+    visibility: hidden;
+  }
+  .description{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 2rem clamp(1rem, 15vw, 10rem);
+  }
+  .description > img{
+    border-radius: var(--border);
+    width: 100%;
+  }
+  .services > div{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem;
+  
+  }
+  .service{
+    height: 60vh;
+  }
+  section.entreprise{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section.avantages{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem clamp(1rem, 10vw, 10rem);
+  }
+  section.avantages > img{
+    width: 100%;
+  }
+  main.contact > .gradient{
+    background-image: linear-gradient(to right, var(--darkColor) 40%, rgba(255, 255, 255, 0) 100%);
+    padding: 2rem clamp(1rem, 5vw, 10rem);
+    width: 100%;
+  }
+  main.works-container {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+  }
+  .works > .before,
+  .works > .after{
+    font-size: 1rem;
+    font-weight: 700;
+    bottom: .5rem;
+
+  }
+  .FAQ-page{
+    padding: 1rem 2rem;
+  }
+  /* Apropos */
+.apropos{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.apropos > img{
+  width: 100%;
+  border-radius: var(--border);
+}
+  
+
+}
+
+@media screen and (max-width: 400px){
+h1{
+  line-height: 2rem;
+}
+h2{
+  line-height: 1.7rem;
+}
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  margin-inline: 1.5rem;
+}
+.hero-section > .sub-section-1{
+  background-image: url(/static/Images/wallpaper2.png);
+  padding: 1rem;
+  border-radius: var(--border);
+  width: 100%;
+}
+.hero-section > .sub-section-1 h1{
+  margin: 1rem;
+}
+.hero-section > .sub-section-2{
+  display: none;
+}
+.sub-section-1 > p{
+  width: calc(100% + 2rem);
+  translate: -1rem 0;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: .5rem;
+}
+button{
+  max-width: 70vw;
+  margin: 0 auto;
+}
+.hero-section > .sub-section-1 > div{
+  display: flex;
+  flex-direction: column;
+}
+.glass-section{
+  width: 100%;
+  padding: 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--boxShadow);
+}
+.glass-elt{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.glass-elt #disabled{
+  color: var(--thirdColor);
+}
+.sub-section-1 .float{
+  display: none;
+  visibility: hidden;
+}
+.description{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 2rem clamp(1rem, 15vw, 10rem);
+}
+.description > img{
+  border-radius: var(--border);
+  width: 100%;
+}
+.services > div{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 2rem;
+
+}
+.service{
+  height: 40vh;
+}
+section.entreprise{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+section.avantages{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem clamp(1rem, 10vw, 10rem);
+}
+section.avantages > img{
+  width: 100%;
+}
+main.contact > .gradient{
+  background-image: linear-gradient(to right, var(--darkColor) 40%, rgba(255, 255, 255, 0) 100%);
+  padding: 2rem clamp(1rem, 5vw, 10rem);
+  width: 100%;
+}
+main.works-container {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+.works > .before,
+.works > .after{
+  font-size: 1rem;
+  font-weight: 700;
+  bottom: .5rem;
+
+}
+.FAQ-page{
+  padding: 1rem 2rem;
+}
+/* Apropos */
+.apropos{
+display: flex;
+flex-direction: column;
+padding: 2rem 1rem;
+gap: 2rem;
+}
+
+.apropos > img{
+width: 100%;
+border-radius: var(--border);
+}
+
 
 }
