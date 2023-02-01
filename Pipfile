@@ -8,10 +8,10 @@ django = "*"
 gunicorn = "*"
 dj-database-url = "*"
 psycopg2-binary = "*"
-environs = "*"
 django-environ = "*"
 django-environs = "*"
 whitenoise = "*"
+environs = {extras = ["django"], version = "*"}
 
 [dev-packages]
 
