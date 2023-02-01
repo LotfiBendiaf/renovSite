@@ -77,6 +77,52 @@ main > section:last-child{
   to   { opacity: 1; }
 }
 
+/* Fade Effects */
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.fade-in{
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+.fade-in.appear{
+  opacity: 1;
+}
+
+
+.from-left{
+  transform: translateX(-50%);
+}
+
+.from-right{
+  transform: translateX(50%);
+}
+
+.from-bottom{
+  transform: translateY(50%);
+}
+
+.from-right,
+.from-left,
+.from-bottom {
+  transition: opacity .3s ease-in, transform .5s ease-in;
+  opacity: 0;
+}
+
+.appear {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+
 h1 {
   font-size: clamp(1.7rem, 3.5vw, 4.5rem);
 }

@@ -17,31 +17,31 @@
         de rénovation immobilière pour les particuliers et les professionnels
       </p>
       <div>
-        <a href="{% url 'contact' %}">
+        <a class="slide-in from-left" href="{% url 'contact' %}">
             <button class="btn">Faire un devis ?</button>
         </a>
-        <a href="{% url 'travaux' %}">
+        <a class="slide-in from-right" href="{% url 'travaux' %}">
             <button class="btn2">
               <img src="{% static "Icons/image.svg" %}" alt=""> Voir nos derniers
               travaux
             </button>
         </a>
       </div>
-      <div class="float elt-1">
+      <div class="slide-in from-right float elt-1">
         <img src="{% static "Icons/house.svg" %}" alt="">
         <div>
           <b class="small-text">Renovation / Construction</b>
           <span class="small-text" id="thirdColor">Au meilleur prix</span>
         </div>
       </div>
-      <div class="float elt-2">
+      <div class="slide-in from-right float elt-2">
         <img src="{% static "Icons/medal-star.svg" %}" alt="">
         <div>
           <b class="small-text">Avis</b>
           <span class="small-text" id="thirdColor">5 / 5 Étoiles</span>
         </div>
       </div>
-      <div class="glass-section">
+      <div class="glass-section slide-in from-bottom">
         <div class="glass-elt">
           <img src="{% static "Icons/location1.svg" %}" alt="">
           <b>Localisation</b>
@@ -75,8 +75,8 @@
 
   <section class="description">
     <img class="pattern" src="{% static "Images/pattern1.png" %}" alt="">
-    <img src="{% static "Images/image1.jpg" %}" alt="">
-    <div>
+    <img class="slide-in from-left" src="{% static "Images/image1.jpg" %}" alt="">
+    <div class="slide-in from-right">
       <h2 class="gradient-color">Pourquoi nous ?</h2>
       <p class="gradient-color">
         Dans notre entreprise de rénovation, nous nous engageons 
@@ -113,7 +113,7 @@
     <h2>Services presentés</h2>
     <span id="disabled">Ce que nous vous offrons pour vos chantiers</span>
     <div>
-        <div class="service" id="plumber">
+        <div class="service slide-in from-left" id="plumber">
             <div class="note"></div>
             <div class="detail-btn"></div>
             <div class="details">
@@ -138,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <div class="service" id="soil">
+        <div class="service slide-in from-bottom" id="soil">
             <div class="note"></div>
             <div class="detail-btn"></div>
             <div class="details">
@@ -162,7 +162,7 @@
                 </div>
             </div>
         </div>
-        <div class="service" id="electric">
+        <div class="service slide-in from-right" id="electric">
             <div class="note"></div>
             <div class="detail-btn"></div>
             <div class="details">
@@ -187,7 +187,7 @@
                 </div>
             </div>
         </div>
-        <div class="service" id="carpenter">
+        <div class="service slide-in from-left" id="carpenter">
             <div class="note"></div>
             <div class="detail-btn"></div>
             <div class="details">
@@ -212,13 +212,13 @@
                 </div>
             </div>
         </div>
-        <div class="service" id="painting">
+        <div class="service slide-in from-bottom" id="painting">
             <div class="note"></div>
             <div class="detail-btn"></div>
             <div class="details">
                 <div class="header">
                     <p>Painture</p>
-                    <p id="secondaryColor">~8€ / &#x33A1</p>
+                    <p id="secondaryColor">~15€ / &#x33A1</p>
                 </div>
                 <div>
                     <img src="{% static "Icons/location1.svg" %}" alt=""> <span class="small-text">34, RUE DU COMMERCE
@@ -237,7 +237,7 @@
                 </div>
             </div>
         </div>
-        <div class="service" id="isolation">
+        <div class="service slide-in from-right" id="isolation">
             <div class="note"></div>
             <div class="detail-btn"></div>
             <div class="details">
@@ -297,10 +297,10 @@
   <section class="avantages">
     <div class="h-bar"></div>
 
-    <img src="{% static "Images/wallpaper3.jpg" %}" alt="">
-    <div class="statements">
+    <img class="slide-in from-left" src="{% static "Images/wallpaper3.jpg" %}" alt="">
+    <div class="statements slide-in from-right">
         <h2>RenovSite la renovation de demain</h2>
-        <p>"Une bonne réputation vaut plus que de l’argent." - Publilius Syrus</p>
+        <p>"Une bonne réputation vaut plus que de l’argent." - <b>Publilius Syrus</b>.</p>
         <div class="element">
             <img src="{% static "Icons/profile-2user.svg" %}" alt="">
             <b>Materiaux</b>
@@ -329,7 +329,7 @@
 
     </div>
   </section>
-  <section class="testimonials">
+  <section class="testimonials slide-in from-bottom">
     <h2>Que disent nos client ?</h2>
     <p class="small-text">Votre satisfaction est notre principal objectif</p>
     <div class="slider">
