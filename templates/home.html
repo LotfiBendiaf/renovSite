@@ -17,11 +17,15 @@
         de rénovation immobilière pour les particuliers et les professionnels
       </p>
       <div>
-        <button class="btn">Faire un devis ?</button>
-        <button class="btn2">
-          <img src="{% static "Icons/image.svg" %}" alt=""> Voir nos derniers
-          travaux
-        </button>
+        <a href="{% url 'contact' %}">
+            <button class="btn">Faire un devis ?</button>
+        </a>
+        <a href="{% url 'travaux' %}">
+            <button class="btn2">
+              <img src="{% static "Icons/image.svg" %}" alt=""> Voir nos derniers
+              travaux
+            </button>
+        </a>
       </div>
       <div class="float elt-1">
         <img src="{% static "Icons/house.svg" %}" alt="">
