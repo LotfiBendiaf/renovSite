@@ -30,7 +30,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOST = ['*', 'renovsite-production.up.railway.app']
+ALLOWED_HOST = ['https://renovsite-production.up.railway.app']
 
 # Application definition
 
