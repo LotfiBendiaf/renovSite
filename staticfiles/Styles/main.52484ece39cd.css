@@ -344,13 +344,13 @@ button{
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-image: url(/static/Images/wallpaper.png);
+  background-image: url("/static/Images/wallpaper.206183452192.png");
   border-radius: var(--border) 0 0 var(--border);
   padding: 3rem calc(11.5vw - 4rem);
 }
 .hero-section > .sub-section-2{
   width: 40%;
-  background-image: url(/static/Images/wallpaper2.png);
+  background-image: url("/static/Images/wallpaper2.95638c374163.png");
   border-radius: var(--border) 0 0 var(--border);
   border-radius: 0 var(--border) var(--border) 0;
 }
@@ -504,22 +504,22 @@ background-image: var(--white);
   transform: scale(1.02);  
 }
 .service#plumber{
-  background-image: url(/static/Images/plumber.jpg);
+  background-image: url("/static/Images/plumber.aafd9df03dfb.jpg");
 }
 .service#soil{
-  background-image: url(/static/Images/soil.jpg);
+  background-image: url("/static/Images/soil.48c5c8733609.jpg");
 }
 .service#electric{
-  background-image: url(/static/Images/electric.jpg);
+  background-image: url("/static/Images/electric.0c0172648f14.jpg");
 }
 .service#carpenter{
-  background-image: url(/static/Images/carpenter.jpg);
+  background-image: url("/static/Images/carpenter.60e9c62d8b88.jpg");
 }
 .service#painting{
-  background-image: url(/static/Images/painting.jpg);
+  background-image: url("/static/Images/painting.e82d30fda356.jpg");
 }
 .service#isolation{
-  background-image: url(/static/Images/isolation.jpg);
+  background-image: url("/static/Images/isolation.748c135586e3.jpg");
 }
 .details{
   background-color: rgba(255, 255, 255, 0.7);
@@ -840,7 +840,7 @@ main.works-container {
 }
 
 main.contact{
-  background-image: url(/static/Images/wallpaper3.jpg);
+  background-image: url("/static/Images/wallpaper3.5bc0da3cd75e.jpg");
   background-size: cover;
 }
 main.contact > .gradient{
@@ -991,7 +991,7 @@ main.contact > .gradient{
     margin-inline: 1.5rem;
   }
   .hero-section > .sub-section-1{
-    background-image: url(/static/Images/wallpaper2.png);
+    background-image: url("/static/Images/wallpaper2.95638c374163.png");
     padding: 1rem;
     border-radius: var(--border);
     width: 100%;
@@ -1107,7 +1107,7 @@ h2{
   margin-inline: 1.5rem;
 }
 .hero-section > .sub-section-1{
-  background-image: url(/static/Images/wallpaper2.png);
+  background-image: url("/static/Images/wallpaper2.95638c374163.png");
   padding: 1rem;
   border-radius: var(--border);
   width: 100%;

@@ -742,6 +742,11 @@ main.works-container {
   padding: 2rem;
 }
 
+.before-after{
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
 .works{
   display: grid;
   place-content: center;
