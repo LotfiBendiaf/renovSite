@@ -8,7 +8,7 @@
     <!-- favicon -->
     <link rel="shortcut icon" type="image/svg" href="{% static 'Icons/star.ico' %}" sizes="32x24"/>
 
-    <title>{% block title %}Domiciliation{% endblock title %}</title>
+    <title>{% block title %}{% endblock title %}</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -20,7 +20,7 @@
     <meta property="og:url" content="https://renovsite-production.up.railway.app/">
     <meta property="og:title" content="RenovSite - Entreprise de renovation a Riems France" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://renovsite-construction-reims.up.railway.app/static/Images/wallpaper3.jpg" />
+    <meta property="og:image" content="https://renovsite-construction-reims.up.railway.app/static/Images/og_image.png" />
     <meta
       property="og:description"
       content=" Située à proximité de Reims, Renov Entreprise met son professionnalisme
@@ -59,7 +59,7 @@
         <a class="link" href="{% url 'home' %}">Accueil</a>
       </li>
       <li>
-        <a class="link" href="#services">Services</a>
+        <a class="link" href="{% url 'home' %}#services">Services</a>
       </li>
       <li>
         <a class="link" href="{% url 'travaux' %}">Nos travaux</a>
