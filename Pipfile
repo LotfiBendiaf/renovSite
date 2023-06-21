@@ -11,6 +11,8 @@ psycopg2-binary = "*"
 django-environs = "*"
 whitenoise = "*"
 environs = {extras = ["django"], version = "*"}
+django-admin-interface = "*"
+django-colorfield = "*"
 
 [dev-packages]
 
