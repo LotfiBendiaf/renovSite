@@ -339,11 +339,13 @@ button{
 .hero-section{
   display: flex;
   margin-inline: 4rem;
+  overflow-x: hidden;
 }
 .hero-section > *{
   background-size: cover;
 }
 .hero-section > .sub-section-1{
+  overflow-x: hidden;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -365,6 +367,7 @@ button{
 }
 
 .hero-section > .sub-section-1 > div{
+  overflow-x: hidden;
   display: flex;
   gap: 1rem;
 }
@@ -422,6 +425,7 @@ button{
   gap: clamp(1rem, 7vw, 10rem);
   background-color: var(--darkColor);
   padding: 3rem clamp(1rem, 20vw, 10rem);
+  overflow-x: hidden;
 }
 .description h2,
 .description h3,
@@ -484,8 +488,10 @@ background-image: var(--white);
 
 .services{
   text-align: center;
+  overflow-x: hidden;
 }
 .services > div{
+  overflow-x: hidden;
   display: grid;
   column-gap: 2rem;
   row-gap: 5rem;
@@ -588,6 +594,7 @@ section.entreprise > .main{
 }
 
 section.avantages{
+  overflow-x: hidden;
   position: relative;
   display: flex;
   gap: 3rem;

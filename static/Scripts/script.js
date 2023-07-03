@@ -7,6 +7,16 @@ const productContainer = [...document.getElementsByClassName("slider")]
 const nxtBtn = [...document.querySelectorAll('.nextBtn')];
 const preBtn = [...document.querySelectorAll('.prevBtn')];
 
+const navBtns = [...document.querySelectorAll('.link')];
+
+navBtns.forEach(navBtn => { 
+  navBtn.addEventListener('click', () => {
+    console.log(navBtn)
+    navBtn.classList.toggle('active')
+
+  })
+})
+
 togglesDown.forEach(toggle => { 
     toggle.addEventListener('click', () => {
         toggle.parentElement.getElementsByTagName('p')[0].classList.toggle('hidden')
