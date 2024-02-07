@@ -67,16 +67,6 @@ main > section:last-child{
   margin-bottom: 0;
 }
 
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
 /* Fade Effects */
 @keyframes fadein {
   from { opacity: 0; }
@@ -253,12 +243,16 @@ hr {
   font-weight: 600;
 }
 .icon{
+  width: 80px;
+  height: 40px;
+}
+.mini-icon{
   width: 20px;
   height: 20px;
 }
 .main-icon{
-  width: 50px;
-  height: 50px;
+  width: 120px;
+  height: 120px;
 }
 .icon2{
   width: 20px;
@@ -753,6 +747,21 @@ main.works-container {
   padding: 2rem;
 }
 
+main.works-container .works-done {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+main.works-container .works-done > img{
+  width: 200px;
+  border-radius: var(--border);
+}
+
+main.works-container .works-done > img:hover{
+  opacity: 0.75;
+}
+
 .before-after{
   max-width: 800px;
   margin-bottom: 2rem;
@@ -992,6 +1001,9 @@ main.contact > .gradient{
     place-items: start;
     gap: 1rem;
   }
+  main.works-container .works-done {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (max-width: 800px){
@@ -1105,6 +1117,9 @@ main.contact > .gradient{
 .apropos > img{
   width: 100%;
   border-radius: var(--border);
+}
+main.works-container .works-done {
+  grid-template-columns: repeat(2, 1fr);
 }
   
 

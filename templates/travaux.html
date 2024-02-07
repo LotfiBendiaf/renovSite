@@ -1,5 +1,5 @@
 <!-- templates/travaux.html -->
-{% extends 'base.html' %} {% load static %} {% block title %}Renov{% endblock title %}
+{% extends 'base.html' %} {% load static %} {% block title %}RPS : Travaux{% endblock title %}
 <!-- Style -->
 {% block style %}
 <link rel="stylesheet" href="{% static 'Styles/main.css' %}" />
@@ -17,8 +17,8 @@
 
   <section class="works slide-in from-bottom">
     <div class="image-container">
-      <img src="{% static "Images/before.jpg" %}" alt=" before image" class="image-before slider-image"> 
-      <img src="{% static "Images/after.jpg" %}" alt=" after image" class="image-after slider-image">
+      <img src="{% static "Images/Travaux/before.jpg" %}" alt=" before image" class="image-before slider-image"> 
+      <img src="{% static "Images/Travaux/after.jpg" %}" alt=" after image" class="image-after slider-image">
     </div>
     <div class="before"></div>
     <span class="after"></span>
@@ -97,6 +97,17 @@
       une disposition organisée et spacieuse. La pièce semble lumineuse,
       accueillante et moderne.
     </p>
+  </div>
+  <h2>Quelques unes de nos dernieres realisations</h2>
+  <div class="works-done">
+    <img src="{% static '/Images/Travaux/im1.jpg'%}" alt="Travaux faits">
+    <img src="{% static '/Images/Travaux/im2.jpg'%}" alt="Travaux faits">
+    <img src="{% static '/Images/Travaux/im4.jpg'%}" alt="Travaux faits">
+    <img src="{% static '/Images/Travaux/im5.jpg'%}" alt="Travaux faits">
+    <img src="{% static '/Images/Travaux/im7.jpg'%}" alt="Travaux faits">
+    <img src="{% static '/Images/Travaux/im8.jpg'%}" alt="Travaux faits">
+    <img src="{% static '/Images/Travaux/im9.jpg'%}" alt="Travaux faits">
+    <img src="{% static '/Images/Travaux/im10.jpg'%}" alt="Travaux faits">
   </div>
 </main>
 {% endblock content%}
