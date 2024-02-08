@@ -1,7 +1,7 @@
 <!-- templates/base.html -->
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
 
@@ -49,7 +49,7 @@
   <header id="header">
     <div class="logo-header">
       <a href="{% url 'home' %}">
-        <img class="main-icon" src="{% static "Icons/RPS-Logo.png" %}" alt="">
+        <img class="main-icon" src="{% static "Icons/RPS-Logo.png" %}" alt="Logo RPS">
       </a>
     </div>
   
@@ -84,13 +84,13 @@
     <div class="menu hidden">
       <ul>
         <li><a class="link" href="#services">Nos services</a>
-          <img class="icon" src="{% static "Icons/house.svg" %}" alt="">
+          <img class="icon" src="{% static "Icons/house.svg" %}" alt="Services icon">
         </li>
         <li><a class="link" href="{% url 'travaux' %}">Nos travaux</a>
-          <img class="icon" src="{% static "Icons/building-3.svg" %}" alt="">
+          <img class="icon" src="{% static "Icons/building-3.svg" %}" alt="Works icon">
         </li>
         <li><a class="link" href="{% url 'apropos' %}">Qui sommes-nous ?</a>
-          <img class="icon" src="{% static "Icons/flag.svg" %}" alt="">
+          <img class="icon" src="{% static "Icons/flag.svg" %}" alt="About icon">
         </li>
         <li style="border-bottom: 2px solid var(--mainColor);"></li>
         <li>
@@ -111,15 +111,15 @@
     <div class="section-1">
         <div>
             <div class="header">
-                <img class="icon" src="{% static "Icons/RPS-Logo-1.png" %}" alt="">
+                <img class="icon" src="{% static "Icons/RPS-Logo-1.png" %}" alt="RPS icon">
             </div>
             <p><b>RPS est une entreprise de construction qui aide les
               gens à rénover leurs maisons ou leurs espaces professionnels</b></p>
             <div>
-                <img class="mini-icon" src="{% static "Icons/house.svg" %}" alt="">
-                <img class="mini-icon" src="{% static "Icons/star-1.svg" %}" alt="">
-                <img class="mini-icon" src="{% static "Icons/money.svg" %}" alt="">
-                <img class="mini-icon" src="{% static "Icons/crown.svg" %}" alt="">
+                <img class="mini-icon" src="{% static "Icons/house.svg" %}" alt="House icon">
+                <img class="mini-icon" src="{% static "Icons/star-1.svg" %}" alt="Star icon">
+                <img class="mini-icon" src="{% static "Icons/money.svg" %}" alt=" Money icon">
+                <img class="mini-icon" src="{% static "Icons/crown.svg" %}" alt="Crown icon">
             </div>
         </div>
         <div>
@@ -137,15 +137,15 @@
         <div>
             <span class="bold-text">Contact</span>
             <div class="header">
-                <img class="mini-icon" src="{% static "Icons/call-outgoing.svg" %}" alt="">
+                <img class="mini-icon" src="{% static "Icons/call-outgoing.svg" %}" alt="Contact icon">
                 +33 780 12 32 95 <br> +33 609 23 24 99
             </div>
             <div class="header">
-                <img class="mini-icon" src="{% static "Icons/building-3.svg" %}" alt="">
+                <img class="mini-icon" src="{% static "Icons/building-3.svg" %}" alt="Address icon">
                 03 rue générale micheler 51100, Reims France
             </div>
             <div class="header">
-                <img class="mini-icon" src="{% static "Icons/global.svg" %}" alt="">
+                <img class="mini-icon" src="{% static "Icons/global.svg" %}" alt="Email icon">
                 contact.reims@rps.com
             </div>
             <a href="{% url 'contact' %}">

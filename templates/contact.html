@@ -14,17 +14,17 @@
         <form method="POST" id="contact-form" class="slide-in from-left">
             <h2 class="bold-text">Nous contacter ?</h2>
             {% csrf_token %}
-            <label>Nom</label>
-            <input class="input-field" required type="text" name="nom">
+            <label for="name" >Nom</label>
+            <input id="name" class="input-field" required type="text" name="nom">
     
-            <label>Sujet</label>
-            <input class="input-field" required type="text" name="sujet" placeholder="Exemple : Faire un devis">
+            <label for="subject" >Sujet</label>
+            <input id="subject" class="input-field" required type="text" name="sujet" placeholder="Exemple : Faire un devis">
     
-            <label>E-Mail</label>
-            <input class="input-field" required type="text" name="email">
+            <label for="email">E-Mail</label>
+            <input id="email" class="input-field" required type="text" name="email">
     
-            <label>Message</label>
-            <textarea class="input-field" required name="message"></textarea> 
+            <label for="message">Message</label>
+            <textarea id="message" class="input-field" required name="message"></textarea> 
     
             <input id="submit-btn" type="submit" name="Envoyer" value="Envoyer">
         </form>
