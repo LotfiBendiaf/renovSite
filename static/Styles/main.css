@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100;200;400;500;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@200;300;400;500;600;800&display=swap');
 :root {
   /* Main colors */
   --mainColor: #313856;
@@ -57,7 +55,7 @@ body {
   background-color: var(--white);
   -webkit-animation: fadein 2s;
   animation: fadein 2s;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 main > section{
@@ -333,13 +331,12 @@ button{
 .hero-section{
   display: flex;
   margin-inline: 4rem;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 .hero-section > *{
   background-size: cover;
 }
 .hero-section > .sub-section-1{
-  overflow-x: hidden;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -347,6 +344,7 @@ button{
   background-image: url(/static/Images/wallpaper.png);
   border-radius: var(--border) 0 0 var(--border);
   padding: 3rem calc(11.5vw - 4rem);
+  z-index: 100;
 }
 .hero-section > .sub-section-2{
   width: 40%;
@@ -361,7 +359,7 @@ button{
 }
 
 .hero-section > .sub-section-1 > div{
-  overflow-x: hidden;
+  overflow-x: clip;
   display: flex;
   gap: 1rem;
 }
@@ -419,7 +417,7 @@ button{
   gap: clamp(1rem, 7vw, 10rem);
   background-color: var(--darkColor);
   padding: 3rem clamp(1rem, 20vw, 10rem);
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 .description h2,
 .description h3,
@@ -482,10 +480,10 @@ background-image: var(--white);
 
 .services{
   text-align: center;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 .services > div{
-  overflow-x: hidden;
+  overflow-x: clip;
   display: grid;
   column-gap: 2rem;
   row-gap: 5rem;
@@ -588,7 +586,7 @@ section.entreprise > .main{
 }
 
 section.avantages{
-  overflow-x: hidden;
+  overflow-x: clip;
   position: relative;
   display: flex;
   gap: 3rem;
@@ -1132,6 +1130,9 @@ h1{
 h2{
   line-height: 1.7rem;
 }
+#header > div > a > .btn {
+  display: none;
+}
 .hero-section{
   display: flex;
   flex-direction: column;
@@ -1248,6 +1249,9 @@ gap: 2rem;
 .apropos > img{
 width: 100%;
 border-radius: var(--border);
+}
+main.works-container .works-done {
+  grid-template-columns: repeat(1, 1fr);
 }
 
 

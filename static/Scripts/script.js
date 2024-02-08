@@ -1,5 +1,3 @@
-console.log("Hello")
-
 const togglesDown = [...document.getElementsByClassName("toggle-down")]
 const togglesUp = [...document.getElementsByClassName("toggle-up")]
 // carousel
