@@ -3,7 +3,8 @@
 {% block title %}RPS Reims{% endblock title %}
 <!-- Style -->
 {% block style %}
-    <link rel="stylesheet" href="{% static 'Styles/main.css' %}" />
+<link rel="preload" href="{% static 'Styles/main.css' %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{% static 'Styles/main.css' %}"></noscript>
     <!-- Script -->
     <script src="{% static 'Scripts/script.js' %}" defer></script>
 {% endblock style %} {% block content %}
