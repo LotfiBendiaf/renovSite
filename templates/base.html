@@ -227,28 +227,28 @@ p {
 
   <header id="header">
     <div class="logo-header">
-      <a href="{% url 'home' %}">
+      <a aria-label="Page principale de RPS" href="{% url 'home' %}">
         <img class="main-icon" src="{% static "Icons/RPS-Logo.png" %}" alt="Logo RPS">
       </a>
     </div>
   
     <ul class="navbar">
       <li class="active">
-        <a class="link" href="{% url 'home' %}">Accueil</a>
+        <a aria-label="Page principale de RPS" class="link" href="{% url 'home' %}">Accueil</a>
       </li>
       <li>
-        <a class="link" href="{% url 'home' %}#services">Services</a>
+        <a aria-label="Services de RPS" class="link" href="{% url 'home' %}#services">Services</a>
       </li>
       <li>
-        <a class="link" href="{% url 'travaux' %}">Nos travaux</a>
+        <a aria-label="Exploration des travaux et chanitiers" class="link" href="{% url 'travaux' %}">Nos travaux</a>
       </li>
       <li>
-        <a class="link" href="{% url 'apropos' %}">Qui sommes nous ?</a>
+        <a aria-label="Page a propos : decouvrez qui nous sommes" class="link" href="{% url 'apropos' %}">Qui sommes nous ?</a>
       </li>
     </ul>
 
     <div>
-      <a href="{% url 'contact' %}">
+      <a aria-label="Contactez nous" href="{% url 'contact' %}">
         <button class="btn">Nous contacter</button>
       </a>
         
@@ -264,21 +264,21 @@ p {
       <ul>
         <li>
           <img class="mini-icon" src="{% static "Icons/house.svg" %}" alt="Services icon">
-          <a class="link" href="#services">Nos services</a>
+          <a aria-label="Exploration de nos services" class="link" href="#services">Nos services</a>
           
         </li>
         <li>
           <img class="mini-icon" src="{% static "Icons/building-3.svg" %}" alt="Works icon">
-          <a class="link" href="{% url 'travaux' %}">Nos travaux</a>
+          <a aria-label="Exploration des travaux et chanitiers" class="link" href="{% url 'travaux' %}">Nos travaux</a>
           
         </li>
         <li><img class="mini-icon" src="{% static "Icons/flag.svg" %}" alt="About icon">
-          <a class="link" href="{% url 'apropos' %}">Qui sommes-nous ?</a>
+          <a aria-label="Page a propos : decouvrez qui nous sommes" class="link" href="{% url 'apropos' %}">Qui sommes-nous ?</a>
           
         </li>
         <li style="border-bottom: 2px solid var(--mainColor);"></li>
         <li>
-          <a href="{% url 'contact' %}">
+          <a aria-label="Contactez nous" href="{% url 'contact' %}">
             <button class="btn">Nous contacter</button>
           </a>
         </li>
@@ -308,15 +308,15 @@ p {
         </div>
         <div>
             <span class="bold-text">A propos</span>
-            <a class="link" href="">Notre histoire</a>
-            <a class="link" href="">Notre equipe</a>
-            <a class="link" href="">Mot du directeur</a>
+            <a aria-label="Histoire de RPS" class="link" href="">Notre histoire</a>
+            <a aria-label="Decouvrez notre equipe de RPS" class="link" href="">Notre equipe</a>
+            <a aria-label="Entendez ce que vous dit notre directeur" class="link" href="">Mot du directeur</a>
         </div>
         <div>
             <span class="bold-text">Support</span>
-            <a class="link" href="{% url 'faq' %}">FAQ</a>
-            <a class="link" href="#services">Services</a>
-            <a class="link" href="">Aide</a>
+            <a aria-label="FAQ" class="link" href="{% url 'faq' %}">FAQ</a>
+            <a aria-label="Exploration de nos services" class="link" href="#services">Services</a>
+            <a aria-label="Comment pouvons nous vous aider" class="link" href="">Aide</a>
         </div>
         <div>
             <span class="bold-text">Contact</span>
@@ -332,16 +332,16 @@ p {
             </div>
             <div class="header">
                 <img class="mini-icon" src="{% static "Icons/message-favorite.svg" %}" alt="Email icon">
-                <a href="mailto:contact@rps-reims.com">contact@rps-reims.com</a>
+                <a aria-label="Contactez nous via notre adresse mail" href="mailto:contact@rps-reims.com">contact@rps-reims.com</a>
             </div>
-            <a href="{% url 'contact' %}">
+            <a aria-label="Contactez nous" href="{% url 'contact' %}">
               <button class="btn">Nous contacter</button>
             </a>
         </div>
 
     </div>
     <div class="section-2">
-      <a class="small-text link bold-text" href="{% url 'conditions_regles' %}">Conditions et Règles</a>
+      <a aria-label="Decouvrez nos regles, reglementations et nos conditions d'utilisation" class="small-text link bold-text" href="{% url 'conditions_regles' %}">Conditions et Règles</a>
         <p class="small-text bold-text">Tout droit reservé, RPS @2024</p> 
     </div>
   </footer>
