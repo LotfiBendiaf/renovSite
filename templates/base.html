@@ -160,7 +160,7 @@ h2 {
 
 h1,
 h2 {
-  font-family: var(--titleFont);
+  font-family: "Abril Fatface", serif;;
   font-weight: 500;
   color: var(--mainTextColor);
   line-height: 3.5rem;
@@ -262,14 +262,19 @@ p {
 
     <div class="menu hidden">
       <ul>
-        <li><a class="link" href="#services">Nos services</a>
-          <img class="icon" src="{% static "Icons/house.svg" %}" alt="Services icon">
+        <li>
+          <img class="mini-icon" src="{% static "Icons/house.svg" %}" alt="Services icon">
+          <a class="link" href="#services">Nos services</a>
+          
         </li>
-        <li><a class="link" href="{% url 'travaux' %}">Nos travaux</a>
-          <img class="icon" src="{% static "Icons/building-3.svg" %}" alt="Works icon">
+        <li>
+          <img class="mini-icon" src="{% static "Icons/building-3.svg" %}" alt="Works icon">
+          <a class="link" href="{% url 'travaux' %}">Nos travaux</a>
+          
         </li>
-        <li><a class="link" href="{% url 'apropos' %}">Qui sommes-nous ?</a>
-          <img class="icon" src="{% static "Icons/flag.svg" %}" alt="About icon">
+        <li><img class="mini-icon" src="{% static "Icons/flag.svg" %}" alt="About icon">
+          <a class="link" href="{% url 'apropos' %}">Qui sommes-nous ?</a>
+          
         </li>
         <li style="border-bottom: 2px solid var(--mainColor);"></li>
         <li>
@@ -317,15 +322,17 @@ p {
             <span class="bold-text">Contact</span>
             <div class="header">
                 <img class="mini-icon" src="{% static "Icons/call-outgoing.svg" %}" alt="Contact icon">
-                +33 780 12 32 95 <br> +33 609 23 24 99
+                +33 780 12 32 95 <br> +33 609 23 24 99 <br> +33 679 00 02 44
             </div>
             <div class="header">
                 <img class="mini-icon" src="{% static "Icons/building-3.svg" %}" alt="Address icon">
-                03 rue générale micheler 51100, Reims France
+                <address>
+                  03 rue générale micheler 51100, Reims France
+                </address> 
             </div>
             <div class="header">
-                <img class="mini-icon" src="{% static "Icons/global.svg" %}" alt="Email icon">
-                contact.reims@rps.com
+                <img class="mini-icon" src="{% static "Icons/message-favorite.svg" %}" alt="Email icon">
+                <a href="mailto:contact@rps-reims.com">contact@rps-reims.com</a>
             </div>
             <a href="{% url 'contact' %}">
               <button class="btn">Nous contacter</button>
@@ -334,6 +341,7 @@ p {
 
     </div>
     <div class="section-2">
+      <a class="small-text link bold-text" href="{% url 'conditions_regles' %}">Conditions et Règles</a>
         <p class="small-text bold-text">Tout droit reservé, RPS @2024</p> 
     </div>
   </footer>

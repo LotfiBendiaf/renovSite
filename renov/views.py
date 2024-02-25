@@ -18,6 +18,10 @@ def Apropos(request):
 def FAQ(request):
 
     return render(request, 'FAQ.html')
+# Conditions
+def Conditions(request):
+
+    return render(request, 'conditions.html')
 
 def Contact(request):
     if request.method == 'POST':

@@ -1,0 +1,125 @@
+<!-- templates/FAQ.html -->
+{% extends 'base.html' %} {% load static %} {% block title %}RPS: Conditions et Regles{% endblock title %}
+<!-- Style -->
+{% block style %}
+<link rel="stylesheet" href="{% static 'Styles/header.css' %}" />
+<link rel="preload" href="{% static 'Styles/footer.css' %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{% static 'Styles/footer.css' %}"></noscript>
+<!-- Script -->
+<script src="{% static 'Scripts/script.js' %}" defer></script>
+
+<style>
+    .icon{
+  width: 80px;
+  height: 40px;
+}
+.mini-icon{
+  width: 20px;
+  height: 20px;
+}
+.main-icon{
+  width: 120px;
+  height: 120px;
+}
+body{
+    padding-inline: clamp(1rem, 10vw, 10rem);
+}
+header{
+    margin-bottom: 2rem;
+}
+h2{
+    margin-top: 2rem;
+}
+button{
+  height: 45px;
+  width: 100%;
+  max-width: 20vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 1rem 0;
+  color: white;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .4s;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: var(--mainColor);
+  /* background-image: linear-gradient(45deg, #1E3163 0%, var(--secondaryColor) 100%); */
+  /* box-shadow: 0 4px 5px 0 var(--secondaryColor); */
+}
+.btn:hover {
+  /* background-image: linear-gradient(90deg, rgba(255,89,89,0.9) 0%, rgba(103,111,163,0.4) 100%); */
+  /* background-image: linear-gradient(45deg, var(--secondaryColor) 0%, #577BC1 100%); */
+  background-color: var(--secondaryColor);
+}
+</style>
+
+{% endblock style %} 
+
+{% block content %}
+<body>
+    <h1>RPS : Conditions et Règles</h1>
+
+    <h2>1. Conditions d'utilisation :</h2>
+    <p>L'utilisation de notre site est soumise à l'acceptation des présentes conditions. Vous devez avoir au moins 18 ans pour utiliser nos services.</p>
+
+    <h2>2. Services proposés :</h2>
+    <p>Nos services de rénovation incluent la rénovation de cuisines, salles de bains, et la peinture intérieure et extérieure. Consultez nos descriptions détaillées pour plus d'informations.</p>
+
+    <h2>3. Tarification et Devis :</h2>
+    <p>Exemple : "Les prix indiqués sur le site sont des estimations. Pour un devis précis, veuillez remplir notre formulaire de demande en ligne."</p>
+
+    <h2>4. Conditions de paiement :</h2>
+    <p>Exemple : "Nous acceptons les paiements par carte de crédit et virement bancaire. Un dépôt de 30 % est requis pour confirmer votre réservation."</p>
+
+    <h2>5. Planification et Délais :</h2>
+    <p>Nos services de rénovation incluent la rénovation de cuisines, salles de bains, et la peinture intérieure et extérieure. Consultez nos descriptions détaillées pour plus d'informations.</p>
+
+    <h2>6. Annulation et Report :</h2>
+    <p>Les annulations doivent être signalées 72 heures avant la date prévue. Des frais d'annulation de 15 % peuvent s'appliquer.</p>
+
+    <h2>7. Accès au Site et Sécurité :</h2>
+    <p>L'accès au site de construction est strictement contrôlé. Les visiteurs doivent porter un équipement de sécurité.</p>
+
+    <h2>8. Propriété Intellectuelle :</h2>
+    <p>Tous les plans et conceptions créés par notre équipe demeurent notre propriété intellectuelle, sauf accord contraire.</p>
+
+    <h2>9. Matériaux et Normes de Qualité :</h2>
+    <p>Nous utilisons des matériaux de qualité supérieure conformes aux normes [normes spécifiques]. Nous privilégions les options respectueuses de l'environnement.</p>
+
+    <h2>10. Politique de Confidentialité :</h2>
+    <p>Vos informations personnelles sont utilisées uniquement pour le traitement des commandes et ne seront jamais vendues à des tiers.</p>
+
+    <h2>11. Assurance et Responsabilité :</h2>
+    <p>Notre entreprise est couverte par une assurance responsabilité civile. Le client est responsable des dommages causés par sa négligence.</p>
+
+    <h2>12. Garanties et Engagements :</h2>
+    <p>Nous offrons une garantie d'un an sur tous nos travaux de rénovation. Des conditions s'appliquent, veuillez consulter notre page de garantie pour plus de détails.</p>
+
+    <h2>13. Responsabilités du Client :</h2>
+    <p>Le client est responsable de préparer le site avant le début des travaux, y compris le déplacement d'objets fragiles.</p>
+
+    <h2>14. Résolution des Litiges :</h2>
+    <p>En cas de litige, les parties s'engagent à tenter une médiation avant d'entamer des procédures judiciaires. La loi [juridiction] s'applique.</p>
+
+    <h2>15. Retours d'Expérience et Témoignages :</h2>
+    <p>Les clients fournissant des témoignages bénéficieront d'une réduction de 10 % sur leur prochain projet. Consultez notre page de témoignages pour plus d'informations.</p>
+
+    <h2>16. Code de Conduite :</h2>
+    <p>Notre équipe s'engage à maintenir un haut niveau de professionnalisme. Tout comportement contraire à notre code de conduite peut entraîner des sanctions.</p>
+
+    <h2>17. Procédures d'Urgence :</h2>
+    <p>En cas d'urgence sur le site, suivez nos procédures d'évacuation d'urgence affichées à des endroits stratégiques.</p>
+
+    <!-- Add any additional sections or styling as needed -->
+
+</body>
+{% endblock content %}

@@ -101,6 +101,7 @@ header > *{
   }
   
   .menu > ul{
+    gap: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -138,5 +139,8 @@ header > *{
     .menu-btn.hidden,
     .menu.hidden{
       display: inline-flex;
+    }
+    header > div > a > button{
+      display: none;
     }
   }

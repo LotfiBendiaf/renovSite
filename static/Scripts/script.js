@@ -54,13 +54,11 @@ let menuOpen =false;
 
 menuBtn.addEventListener('click', () => {
   if(!menuOpen) {
-    console.log("Test")
     menuBtn.classList.add('open');
     menu.classList.remove('hidden');
     menu.classList.add('visible');
     menuOpen = true;
   } else {
-    console.log("Test")
     menuBtn.classList.remove('open');
     menu.classList.remove('visible');
     menu.classList.add('hidden');

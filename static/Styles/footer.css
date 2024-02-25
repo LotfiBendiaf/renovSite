@@ -35,6 +35,10 @@ footer .section-1 > div > .header{
 }
 footer .section-2{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
     margin-bottom: 2rem;
 }
 
