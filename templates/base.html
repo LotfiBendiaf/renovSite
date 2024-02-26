@@ -268,7 +268,7 @@ p {
       <ul>
         <li>
           <img class="mini-icon" src="{% static "Icons/house.svg" %}" alt="Services icon">
-          <a aria-label="Exploration de nos services" class="link" href="#services">Nos services</a>
+          <a aria-label="Exploration de nos services" class="link" href="{% url 'home' %}#services">Nos services</a>
           
         </li>
         <li>
@@ -319,7 +319,7 @@ p {
         <div>
             <span class="bold-text">Support</span>
             <a aria-label="FAQ" class="link" href="{% url 'faq' %}">FAQ</a>
-            <a aria-label="Exploration de nos services" class="link" href="#services">Services</a>
+            <a aria-label="Exploration de nos services" class="link" href="{% url 'home' %}#services">Services</a>
             <a aria-label="Comment pouvons nous vous aider" class="link" href="">Aide</a>
         </div>
         <div>

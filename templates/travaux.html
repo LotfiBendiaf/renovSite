@@ -108,7 +108,9 @@ function showSlides(n) {
 }
 
 .row{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
   justify-content: space-between;
 }
 
@@ -121,7 +123,6 @@ function showSlides(n) {
 /* Six columns side by side */
 .column {
   float: left;
-  width: 15%;
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -136,6 +137,18 @@ function showSlides(n) {
 .demo:hover {
   opacity: 1;
 }
+@media screen and (max-width: 800px)
+  {
+    .row{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+@media screen and (max-width: 450px)
+  {
+    .row{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
   </style>
 {% endblock style %} {% block content %}
 <main class="works-container">
